@@ -6,5 +6,8 @@
   <configuration>
   	<typeAliases>
   		<typeAlias type="com.iu.board.notice.NoticeDTO" alias="NoticeDTO"/>
+  		<typeAlias type="com.iu.board.qna.QnaDTO" alias="QnaDTO"/>
+  		<typeAlias type="com.iu.board.BoardDTO" alias="BoardDTO"/>
+  		<typeAlias type="com.iu.util.Pager" alias="Pager"/>
   	</typeAliases>
   </configuration>

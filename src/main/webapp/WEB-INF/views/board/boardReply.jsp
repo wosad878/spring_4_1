@@ -9,9 +9,10 @@
 <body>
 <h1>${board} Reply</h1>
 	<form action="./${board}Reply" method="post">
+		<input type="hidden" name="num" value="${num}">
 		<input type="text" name="title">
-		<input type="text" name="Replyr">
-		<textarea rows="" cols=""></textarea>
+		<input type="text" name="writer">
+		<textarea name="contents" rows="" cols=""></textarea>
 		<button>Reply</button>
 	</form>
 </body>

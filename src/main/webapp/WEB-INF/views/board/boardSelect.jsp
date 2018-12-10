@@ -13,11 +13,11 @@
 		$("#del").click(function(){
 			$("#frm").submit();
 		});
+		var msg = '${msg}';
+		if(msg != ''){
+		alert(msg);
+		}
 	});
-	var msg = '${msg}';
-	if(msg != ''){
-	alert(msg);
-	}
 </script>
 </head>
 <body>
@@ -35,7 +35,7 @@
 		<input type="hidden" name="num" value="${boardDTO.num}">
 	</form>
 	<c:if test="${board ne 'notice'}">
-		<a href="./${board}Reply">Reply</a>
+		<a href="./${board}Reply?num=${boardDTO.num}">Reply</a>
 	</c:if>
 </body>
 </html>
